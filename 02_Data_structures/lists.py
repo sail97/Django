@@ -22,7 +22,7 @@ print(remove_value(a,2))
 
 # another method
 while 2 in a:
-    remove(2)
+    a.remove(2)
 print(a)
 
 '''
@@ -34,11 +34,11 @@ print(a)
 # #     print(ch[i], i)
 # print(ch[::])
 
-a = int(input("enter no. of fruits: "))
-fruits = []
+# a = int(input("enter no. of fruits: "))
+# fruits = []
 
-for i in range(a,8):
-    fruit = input("Enter the fruit: ")
-    fruits.append(fruit)
+# for i in range(a,8):
+#     fruit = input("Enter the fruit: ")
+#     fruits.append(fruit)
 
-print(fruits)
+# print(fruits)
