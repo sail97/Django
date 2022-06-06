@@ -111,7 +111,7 @@ print("No. of digits: ",count)
 '''
 
 # to find whether given no. is prime or not
-
+'''
 a = int(input("Enter a number : "))
 
 if a>1:
@@ -124,4 +124,4 @@ if a>1:
 else:
     print("It is not a prime number")
 
-
+'''
