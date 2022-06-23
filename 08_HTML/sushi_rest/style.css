@@ -1,0 +1,39 @@
+/* body{
+    width: 100%;
+}
+
+video{
+    
+    position: fixed;
+    z-index: 1;
+}
+
+div{
+    position: relative;
+    width: 720px;
+    margin: 100px auto;
+    text-align:center;
+    color: white;
+    z-index: 2;
+}
+
+h1{
+    color: rgb(red, green, blue);
+    background-color: yellow;
+    font-size: 44px;
+    opacity: .7;
+    margin-bottom: 25px;
+}
+
+p{
+    color: blue;
+    background-color: rgb(red, green, blue);
+    opacity: .7;
+}
+button{
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 15px;
+    color: rgb(red, green, blue);
+    border: solid 4px rgb(red, green, blue);
+} */
