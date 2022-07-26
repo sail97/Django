@@ -54,7 +54,7 @@
 
     <section class="youtuber-form container mt-5 mb-5">
       <div class="row">
-        <form class="col-md-8 offset-md-2" method="post">
+        <form class="col-md-8 offset-md-2" method="post" action="{% url 'hiretuber' %}">
           {% csrf_token %}
           <h3 class="pt-2 pb-2">Fill the Form and reach out</h3>
           {% if user.is_authenticated %}
@@ -62,6 +62,8 @@
           {% else %}
           <input type="hidden" name="user_id" value="00">
           {% endif %}
+          <input type="hidden" name="ytuber_id" value="{youtuber.id}">
+
           <div class="form-row">
             <div class="form-group col-md-4">
               <input type="text" name="fname" class="form-control" placeholder="First Name">
@@ -80,9 +82,9 @@
 
           <div class="form-group">
             <select name="tuber_name"  class="form-control">
-              <option selected disabled hidden>Select tuber</option>
+              <option selected>Select tuber</option>
                
-              <option value="{{tuber.name}}">{{tuber.name}}</option>
+              <option value="{{youtuber.name}}">{{youtuber.name}}</option>
                
             </select>
           
